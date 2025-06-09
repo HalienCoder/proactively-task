@@ -1,0 +1,18 @@
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body{
+  font-family: "Inter", sans-serif;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+ul{
+  list-style: none;
+}
+.full-section{
+  height: 100vh;
+}
