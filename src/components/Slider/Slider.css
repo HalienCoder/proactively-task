@@ -38,7 +38,7 @@
         transform: translateY(-50%);
     }
 }
-
+/* Animation for bottom-to-top scrolling */
 @keyframes scroll-up {
     0% {
         transform: translateY(-50%);

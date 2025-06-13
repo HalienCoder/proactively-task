@@ -1,0 +1,57 @@
+.search-box{
+    width: 67.5rem;
+    height: 5.75rem;
+    flex-shrink: 0;
+    border-radius: 14px;
+    background: #FFF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: auto;
+    transform: translateY(-200%);
+    z-index: 1000;
+}
+
+input, .search{
+    height: 3.75rem;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 1px solid #E7E7E7;
+    background-color: #F9FAFB;
+    color: #8B8E9C;
+    font-size: 16px;
+    padding-left: 3rem;
+}
+
+.condition{
+    background:url("../../assets/search-gray.svg") no-repeat 1rem center;
+    width: 23rem;   
+}
+
+.location{
+    background:url("../../assets/location.svg") no-repeat 1rem center;
+    width: 16rem; 
+}
+
+.insurance{
+    background:url("../../assets/insurance.svg") no-repeat 1rem center;
+    width: 14rem; 
+}
+
+.search{
+    width: 10rem;
+    background: linear-gradient(272deg, #4683D0 17.7%, #7CD0A2 145.75%);
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+    border-radius: 8px;
+}
+
+.search-icon{
+    padding-right: 10px;
+}
