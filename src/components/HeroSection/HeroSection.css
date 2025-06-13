@@ -1,0 +1,43 @@
+.heading{
+    width: 600px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: -2%;
+}
+
+.subText{
+    color: #707070;
+    font-family: Inter;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero-text{
+    padding-bottom: 8rem;
+}
+
+.gradientText{
+    background: linear-gradient(93deg, #1173B3 -34.01%, #0CB9B3 69.91%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 131%;
+    letter-spacing: -0.8px;
+}
+
+.divider-svg{
+    transform: rotate(-3deg);
+    transform-origin: top left;
+    overflow: hidden;
+    width: 99.9%;
+}
+

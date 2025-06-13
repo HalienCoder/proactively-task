@@ -1,0 +1,57 @@
+.scroller-container {
+    display: flex;
+    height: 44rem;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.column {
+    overflow: hidden;
+    position: relative;
+    flex: 1;
+}
+
+.scrolling-track {
+    display: flex;
+    flex-direction: column;
+    animation-iteration-count: infinite;
+    gap: 30px;
+    animation-timing-function: linear;
+    height: fit-content;
+    animation-duration: 8s;
+}
+
+.top-to-bottom .scrolling-track {
+    animation-name: scroll-down;
+}
+
+.bottom-to-top .scrolling-track {
+    animation-name: scroll-up;
+}
+
+/* Animation for top-to-bottom scrolling */
+@keyframes scroll-down {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-50%);
+    }
+}
+
+@keyframes scroll-up {
+    0% {
+        transform: translateY(-50%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.img1 {
+    width: 100%;
+    height: auto;
+    min-height: 150px; 
+    object-fit: cover;  
+    border-radius: 16px;
+}

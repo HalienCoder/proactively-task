@@ -5,7 +5,7 @@ import down_arrow from "../../assets/down-arrow.svg"
 export default function Header(){
     const [drop, setDrop] = useState(false)
     return(
-        <>
+
             <nav>
             <div className="logo">
                 <img src={logo} alt="Logo" />
@@ -52,6 +52,5 @@ export default function Header(){
                 }
             </ul>
             </nav>
-        </>
     )
 }

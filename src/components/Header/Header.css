@@ -3,7 +3,8 @@ nav{
     align-items: center;
     justify-content: space-around;
     height: 5.75rem;
-    border-bottom: 1px solid #EAEAEA
+    border-bottom: 1px solid #EAEAEA;
+    z-index: 1000;
 }
 
 ul{
@@ -30,6 +31,7 @@ li a{
 
 .logo{
     display: flex;
+    gap: 4px;
 }
 .down-arrow{
     padding-inline: 4px;
