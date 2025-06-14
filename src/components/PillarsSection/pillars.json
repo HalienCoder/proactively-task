@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "image": "/imgs/Img1.png",
+    "statIcon": "/svgs/vect1.svg",
+    "statText": "121/80",
+    "statUnits": "mmHg",
+    "title": "Nutrition",
+    "description": "Evidence supports the use of a whole food, plant-predominant diet to prevent, treat and reverse chronic illness."
+  },
+  {
+    "id": 2,
+    "image": "/imgs/Img2.png",
+    "statIcon": "/svgs/vect2.svg",
+    "statText": "32",
+    "statUnits": "minutes",
+    "title": "Physical activity",
+    "description": "Regular physical activity is key to managing weight, improving mental health, and reducing risk of chronic disease."
+  },
+  {
+    "id": 3,
+    "image": "/imgs/Img3.png",
+    "statIcon": "/svgs/vect3.svg",
+    "statText": "8",
+    "statUnits": "hours",
+    "title": "Restorative Sleep",
+    "description": "Consistent, quality sleep is essential for cognitive function and physical health."
+  },
+  {
+    "id": 4,
+    "image": "/imgs/Img4.png",
+    "statIcon": "/svgs/vect4.svg",
+    "statText": "60",
+    "statUnits": "bpm",
+    "title": "Stress management",
+    "description": "Effective stress management techniques are crucial for mental well-being and overall health."
+  },
+  {
+    "id": 5,
+    "image": "/imgs/Img5.png",
+    "statIcon": "/svgs/vect5.svg",
+    "statText": "Feeling",
+    "statUnits": "better",
+    "title": "Social Condition",
+    "description": "Strong social connections are associated with a lower risk of many chronic diseases and enhanced mental health."
+  },
+  {
+    "id": 6,
+    "image": "/imgs/Img6.png",
+    "statIcon": "/svgs/vect6.svg",
+    "statText": "62",
+    "statUnits": "days",
+    "title": "Substance abuse",
+    "description": "Avoiding tobacco, limiting alcohol use, and abstaining from harmful substances are vital for long-term health."
+  }
+]
