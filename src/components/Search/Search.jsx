@@ -10,7 +10,6 @@ export default function Search(){
         <input className="location" placeholder="City, state, or zipcode"></input>
         <input className="insurance" placeholder="Insurance Carrier"></input>
         <button className="search"><img src={search} className="search-icon"/>Find Now</button>
-            
         </div>
     )
 }

@@ -1,31 +1,24 @@
-.heading{
-    width: 600px;
+/* Base styles */
+.heading {
+    width: 100%;
+    max-width: 600px;
     font-weight: 500;
     font-size: 40px;
     line-height: 100%;
     letter-spacing: -2%;
 }
 
-.subText{
+.subText {
     color: #707070;
     font-family: Inter;
     font-size: 1.125rem;
     font-style: normal;
     font-weight: 400;
     line-height: 2rem;
+    margin-top: 1rem;
 }
 
-.hero{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.hero-text{
-    padding-bottom: 8rem;
-}
-
-.gradientText{
+.gradientText {
     background: linear-gradient(93deg, #1173B3 -34.01%, #0CB9B3 69.91%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -34,10 +27,214 @@
     letter-spacing: -0.8px;
 }
 
-.divider-svg{
+.divider-svg {
     transform: rotate(-3deg);
-    transform-origin: top left;
     overflow: hidden;
     width: 99.9%;
+    height: auto;
 }
 
+/* Desktop Layout */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70vh;
+    padding: 2rem 4rem;
+    gap: 2rem;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.hero-text {
+    padding-bottom: 0;
+}
+
+.hero-search {
+    display: none; /* Hidden on desktop - appears separately */
+}
+
+.hero-slider {
+    flex: 1;
+    max-width: 50%;
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        text-align: left;
+        gap: 2rem;
+        min-height: auto;
+        padding: 2rem;
+        align-items: flex-start;
+    }
+    
+    .hero-content {
+        max-width: 100%;
+        order: 1;
+        width: 100%;
+    }
+    
+    .hero-slider {
+        order: 2;
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .hero-search {
+        display: none; /* Still separate on tablet */
+    }
+    
+    .heading {
+        font-size: 36px;
+        max-width: 100%;
+        text-align: left;
+    }
+    
+    .subText {
+        font-size: 1rem;
+        line-height: 1.6rem;
+        text-align: left;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .hero {
+        padding: 1.5rem 1rem;
+        gap: 2rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .hero-content {
+        order: 1;
+        width: 100%;
+        gap: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .hero-text {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-search {
+        display: block; /* Show search within hero on mobile */
+        width: 100%;
+        margin: 1rem 0;
+        padding: 0;
+        position: relative;
+        z-index: 1;
+    }
+    
+    /* Reset any margins/padding on search component */
+    .hero-search > * {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .hero-slider {
+        order: 2;
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .heading {
+        font-size: 28px;
+        line-height: 110%;
+        letter-spacing: -1%;
+        text-align: left;
+        margin-bottom: 0.5rem;
+    }
+    
+    .subText {
+        font-size: 0.95rem;
+        line-height: 1.4rem;
+        margin-top: 0.5rem;
+        text-align: left;
+        color: #707070;
+    }
+    
+    .divider-svg {
+        transform: rotate(-2deg);
+    }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+    .hero {
+        padding: 1rem;
+        gap: 1rem;
+    }
+    
+    .hero-content {
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .hero-search {
+        transform: translateY(45%);
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .hero-search > * {
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    .heading {
+        font-size: 24px;
+        line-height: 115%;
+        text-align: left;
+        margin-bottom: 0.5rem;
+    }
+    
+    .subText {
+        font-size: 0.9rem;
+        line-height: 1.3rem;
+        text-align: left;
+        margin-top: 0.5rem;
+    }
+    
+    .divider-svg {
+        transform: rotate(-1.5deg);
+    }
+}
+
+/* Large Desktop Styles */
+@media (min-width: 1440px) {
+    .hero {
+        padding: 4rem 6rem;
+    }
+    
+    .heading {
+        font-size: 44px;
+    }
+    
+    .subText {
+        font-size: 1.25rem;
+        line-height: 2.2rem;
+    }
+}
+
+/* Hide the separate Search component on mobile */
+@media (max-width: 768px) {
+    .hero + * {
+        display: none;
+    }
+}
